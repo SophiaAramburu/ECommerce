@@ -46,8 +46,11 @@ Make sure to run seed data before initializing
 ```
 
 
-### Link to Video Demo: 
+### Link to Video Demo: https://drive.google.com/file/d/1VhOwQMZX5y3HlfS0Lems0qok7Qr11ppj/view
 
+### Demo 
+
+![Demo](Capture.PNG)
 
 ## License
 
