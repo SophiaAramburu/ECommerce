@@ -2,7 +2,7 @@ const router = require("express").Router();
 const { Tag, Product, ProductTag } = require("../../models");
 
 
-// Gets all tags with associated data via Product model
+
 router.get("/", async (req, res) => {
   try {
     const tagData = await Tag.findAll({
@@ -14,7 +14,6 @@ router.get("/", async (req, res) => {
   }
 });
 
-// Gets specific tag by ID
 router.get("/:id", async (req, res) => {
 
   try {
@@ -31,7 +30,7 @@ router.get("/:id", async (req, res) => {
   }
 });
 
-// Creates a new tag given the tag_name in the request body
+
 router.post("/", async (req, res) => {
   try {
     const newTag = await Tag.create(req.body);
@@ -42,7 +41,7 @@ router.post("/", async (req, res) => {
   }
 });
 
-// Updates the tag name by ID
+
 router.put("/:id", async (req, res) => {
   try {
     const updateTag = await Tag.update(req.body, {
@@ -56,7 +55,7 @@ router.put("/:id", async (req, res) => {
   }
 });
 
-// Deletes tag by the request parameter ID
+
 router.delete("/:id", async (req, res) => {
   try {
     const tagData = await Tag.destroy({
